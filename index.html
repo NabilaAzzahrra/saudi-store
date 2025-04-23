@@ -43,9 +43,9 @@
       <div class="text-xl"><i class="fi fi-br-menu-burger"></i></div>
       <div class="w-full text-center font-bold text-xl">SAUDI STORE</div>
       <div class="flex w-[400px] justify-between gap-3 items-center">
-        <div class="cursor-pointer text-blue-600 hover:underline">About Us</div>
-        <div class="cursor-pointer text-blue-600 hover:underline">Blog</div>
-        <div class="cursor-pointer text-blue-600 hover:underline">FAQ</div>
+        <div onclick="showSection('about')" class="cursor-pointer text-blue-600 hover:underline">About Us</div>
+        <div onclick="showSection('blog')" class="cursor-pointer text-blue-600 hover:underline">Blog</div>
+        <div onclick="showSection('faq')" class="cursor-pointer text-blue-600 hover:underline">FAQ</div>
         <div class="flex gap-2">
           <div
             class="w-8 h-8 bg-white rounded-full shadow-sm flex justify-center items-center"
@@ -113,298 +113,356 @@
     </div>
 
     <div>
-      <div class="mt-4 flex gap-5">
-        <div class="w-full bg-white p-6 rounded-3xl shadow-sm">
-          <div class="text-[45px] font-semibold">
-            Unleash Your Style <br />Shop the Latest <br />Trends
-          </div>
-          <div class="mt-3">
-            Discover the latest trends & express your style effortlessy. Shop
-            exclusive <br />collections with premium designs, just for you!
-          </div>
-          <div class="flex gap-1 items-start mt-5">
-            <div class="bg-black text-white px-4 py-2 text-sm rounded-3xl">
-              Shop Now
+      <div id="home">
+        <div class="mt-4 flex gap-5">
+          <div class="w-full bg-white p-6 rounded-3xl shadow-sm">
+            <div class="text-[45px] font-semibold">
+              Unleash Your Style <br />Shop the Latest <br />Trends
             </div>
-            <div
-              class="bg-black text-white rounded-full h-9 w-9 flex items-center justify-center pt-1"
-            >
-              <i class="fi fi-bs-arrow-up-right"></i>
+            <div class="mt-3">
+              Discover the latest trends & express your style effortlessy. Shop
+              exclusive <br />collections with premium designs, just for you!
             </div>
-          </div>
-          <div class="mt-6 flex justify-between items-end">
-            <div>
-              <div class="text-2xl">25 Million+</div>
-              <div class="text-xs">
-                Real review from our happy customers! <br />
-                See what fashion lovers are saying about <br />our quality,
-                style, and service
-              </div>
-            </div>
-            <div class="flex">
-              <div
-                class="h-14 w-14 bg-red-500 text-center flex justify-center items-center rounded-full border border-white"
-              ></div>
-              <div
-                class="h-14 w-14 bg-amber-500 text-center flex justify-center items-center rounded-full -ml-2 border border-white"
-              ></div>
-              <div
-                class="h-14 w-14 bg-emerald-500 text-center flex justify-center items-center rounded-full -ml-2 border border-white"
-              ></div>
-              <div
-                class="h-14 w-14 bg-gray-500 text-center flex justify-center items-center rounded-full -ml-2 border border-white"
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="w-full bg-white p-6 rounded-3xl shadow-sm bg-[url('../img/image-1.png')] bg-cover bg-start"
-        ></div>
-      </div>
-
-      <div class="grid grid-cols-3 gap-4 mt-4">
-        <div
-          class="bg-[url('../img/image-2.png')] h-[250px] rounded-4xl bg-cover"
-        ></div>
-        <div
-          class="bg-[url('../img/image-3.png')] h-[250px] rounded-4xl bg-cover"
-        ></div>
-        <div
-          class="bg-white h-[250px] rounded-4xl bg-cover flex items-center justify-center"
-        >
-          <div class="text-center">
-            <div class="text-3xl">Models wearing <br />full outfits</div>
-            <div
-              class="mt-8 bg-black text-white rounded-full py-2 w-36 ml-12 text-sm"
-            >
-              Explore more
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="flex items-center justify-center mt-12 owl-carousel">
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-1.webp" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-2.png" style="width: 20%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-3.png" style="width: 25%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-4.png" style="width: 65%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-5.webp" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-6.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-7.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-8.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-9.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-10.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-11.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-12.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-13.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-14.png" style="width: 30%" />
-        </div>
-        <div class="w-full h-[200px] flex justify-center items-center">
-          <img src="/img/brand/brand-15.png" style="width: 30%" />
-        </div>
-      </div>
-
-      <div class="text-[40px] font-semibold mt-14">Our Category List</div>
-
-      <div class="grid grid-cols-3 gap-8 mt-10">
-        <div class="w-full relative h-[600px] rounded-3xl overflow-hidden">
-          <div
-            class="absolute inset-0 bg-[url('../img/product/product-1.jpg')] bg-cover bg-center z-0"
-          ></div>
-          <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
-          <div
-            class="relative z-20 flex flex-col justify-center items-center h-full text-center"
-          >
-            <div class="text-white text-3xl font-semibold">Set Collection</div>
-            <div class="text-white text-xl font-semibold">35 Items</div>
-          </div>
-        </div>
-
-        <div class="w-full relative h-[600px] rounded-3xl overflow-hidden">
-          <div
-            class="absolute inset-0 bg-[url('../img/product/product-2.jpg')] bg-cover bg-center z-0"
-          ></div>
-          <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
-          <div
-            class="relative z-20 flex flex-col justify-center items-center h-full text-center"
-          >
-            <div class="text-white text-3xl font-semibold">Shirt Outfit</div>
-            <div class="text-white text-xl font-semibold">25 Items</div>
-          </div>
-        </div>
-
-        <div class="w-full relative h-[600px] rounded-3xl overflow-hidden">
-          <div
-            class="absolute inset-0 bg-[url('../img/product/product-3.jpg')] bg-cover bg-center z-0"
-          ></div>
-          <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
-          <div
-            class="relative z-20 flex flex-col justify-center items-center h-full text-center"
-          >
-            <div class="text-white text-3xl font-semibold">T-Shirt</div>
-            <div class="text-white text-xl font-semibold">20 Items</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-4 flex items-center justify-center">
-        <div>
-          <div class="text-[40px] font-semibold mt-24">Our Category List</div>
-          <div class="text-center mb-12">Recently added shirts!</div>
-        </div>
-      </div>
-
-      <div class="mt-4 grid grid-cols-3 gap-5">
-        <div class="bg-white shadow-sm p-4 rounded-3xl">
-          <div class="flex items-center justify-center">
-            <img src="/img/shirts/shirt-1.png" style="width: 80%" />
-          </div>
-          <div class="px-6 mt-3">
-            <div class="text-3xl font-semibold">Plain White Shirt</div>
-            <div class="text-xl mt-2 mb-4">$29.00</div>
-          </div>
-        </div>
-        <div class="bg-white shadow-sm p-4 rounded-3xl">
-          <div class="flex items-center justify-center">
-            <img src="/img/shirts/shirt-2.png" style="width: 74%" />
-          </div>
-          <div class="px-6 mt-3">
-            <div class="text-3xl font-semibold">Plain White Shirt</div>
-            <div class="text-xl mt-2 mb-4">$29.00</div>
-          </div>
-        </div>
-        <div class="bg-white shadow-sm p-4 rounded-3xl">
-          <div class="flex items-center justify-center">
-            <img src="/img/shirts/shirt-3.png" style="width: 78%" />
-          </div>
-          <div class="px-6 mt-3">
-            <div class="text-3xl font-semibold">Plain White Shirt</div>
-            <div class="text-xl mt-2 mb-4">$29.00</div>
-          </div>
-        </div>
-        <div class="bg-white shadow-sm p-4 rounded-3xl">
-          <div class="flex items-center justify-center">
-            <img src="/img/shirts/shirt-4.png" style="width: 80%" />
-          </div>
-          <div class="px-6 mt-3">
-            <div class="text-3xl font-semibold">Plain White Shirt</div>
-            <div class="text-xl mt-2 mb-4">$29.00</div>
-          </div>
-        </div>
-        <div class="bg-white shadow-sm p-4 rounded-3xl">
-          <div class="flex items-center justify-center">
-            <img src="/img/shirts/shirt-5.png" style="width: 78%" />
-          </div>
-          <div class="px-6 mt-3">
-            <div class="text-3xl font-semibold">Plain White Shirt</div>
-            <div class="text-xl mt-2 mb-4">$29.00</div>
-          </div>
-        </div>
-        <div class="bg-white shadow-sm p-4 rounded-3xl">
-          <div class="flex items-center justify-center">
-            <img src="/img/shirts/shirt-6.png" style="width: 83%" />
-          </div>
-          <div class="px-6 mt-3">
-            <div class="text-3xl font-semibold">Plain White Shirt</div>
-            <div class="text-xl mt-2 mb-4">$29.00</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-24 bg-white rounded-4xl h-[500px] flex justify-center">
-        <img src="/img/discount/disc-1.png" style="width: 22%" class="ml-33" />
-        <div class="text-center px-24 flex items-center justify-center">
-          <div>
-            <div class="text-[70px] font-semibold">Get 50% Off</div>
-            <div class="text-xl">
-              for all new product purchases <br />min.purchase $ 450.000
-            </div>
-            <div class="flex items-start mt-5 justify-center gap-1">
-              <div
-                class="bg-black text-white px-8 text-lg py-4 text-sm rounded-full"
-              >
+            <div class="flex gap-1 items-start mt-5">
+              <div class="bg-black text-white px-4 py-2 text-sm rounded-3xl">
                 Shop Now
               </div>
               <div
-                class="bg-black text-white rounded-full h-13 w-13 flex items-center justify-center pt-1"
+                class="bg-black text-white rounded-full h-9 w-9 flex items-center justify-center pt-1"
               >
                 <i class="fi fi-bs-arrow-up-right"></i>
               </div>
             </div>
+            <div class="mt-6 flex justify-between items-end">
+              <div>
+                <div class="text-2xl">25 Million+</div>
+                <div class="text-xs">
+                  Real review from our happy customers! <br />
+                  See what fashion lovers are saying about <br />our quality,
+                  style, and service
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="h-14 w-14 bg-red-500 text-center flex justify-center items-center rounded-full border border-white"
+                ></div>
+                <div
+                  class="h-14 w-14 bg-amber-500 text-center flex justify-center items-center rounded-full -ml-2 border border-white"
+                ></div>
+                <div
+                  class="h-14 w-14 bg-emerald-500 text-center flex justify-center items-center rounded-full -ml-2 border border-white"
+                ></div>
+                <div
+                  class="h-14 w-14 bg-gray-500 text-center flex justify-center items-center rounded-full -ml-2 border border-white"
+                ></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <img src="/img/discount/disc-2.png" style="width: 25%" />
-      </div>
-
-      <div class="mt-4 flex items-center justify-center">
-        <div>
-          <div class="text-[40px] font-semibold mt-24">
-            Our Fitured Collections
-          </div>
-          <div class="text-center mb-12">Recently added shirts!</div>
-        </div>
-      </div>
-
-      <div class="mt-4 grid grid-cols-3 gap-5">
-        <div>
           <div
-            class="h-[350px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden"
+            class="w-full bg-white p-6 rounded-3xl shadow-sm bg-[url('../img/image-1.png')] bg-cover bg-start"
+          ></div>
+        </div>
+  
+        <div class="grid grid-cols-3 gap-4 mt-4">
+          <div
+            class="bg-[url('../img/image-2.png')] h-[250px] rounded-4xl bg-cover"
+          ></div>
+          <div
+            class="bg-[url('../img/image-3.png')] h-[250px] rounded-4xl bg-cover"
+          ></div>
+          <div
+            class="bg-white h-[250px] rounded-4xl bg-cover flex items-center justify-center"
           >
+            <div class="text-center">
+              <div class="text-3xl">Models wearing <br />full outfits</div>
+              <div
+                class="mt-8 bg-black text-white rounded-full py-2 w-36 ml-12 text-sm"
+              >
+                Explore more
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flex items-center justify-center mt-12 owl-carousel">
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-1.webp" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-2.png" style="width: 20%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-3.png" style="width: 25%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-4.png" style="width: 65%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-5.webp" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-6.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-7.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-8.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-9.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-10.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-11.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-12.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-13.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-14.png" style="width: 30%" />
+          </div>
+          <div class="w-full h-[200px] flex justify-center items-center">
+            <img src="/img/brand/brand-15.png" style="width: 30%" />
+          </div>
+        </div>
+  
+        <div class="text-[40px] font-semibold mt-14">Our Category List</div>
+  
+        <div class="grid grid-cols-3 gap-8 mt-10">
+          <div class="w-full relative h-[600px] rounded-3xl overflow-hidden">
             <div
-              class="absolute inset-0 bg-[url('../img/collections/collect-1.jpg')] bg-cover bg-center z-0"
+              class="absolute inset-0 bg-[url('../img/product/product-1.jpg')] bg-cover bg-center z-0"
             ></div>
             <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
             <div
-              class="relative z-20 flex flex-col justify-end items-start h-full text-center"
+              class="relative z-20 flex flex-col justify-center items-center h-full text-center"
             >
-              <div class="flex px-6 pb-6 justify-between">
-                <div class="text-left">
-                  <div class="text-white text-3xl font-semibold">Top Pants</div>
-                  <div class="text-white text-xl">Series</div>
+              <div class="text-white text-3xl font-semibold">Set Collection</div>
+              <div class="text-white text-xl font-semibold">35 Items</div>
+            </div>
+          </div>
+  
+          <div class="w-full relative h-[600px] rounded-3xl overflow-hidden">
+            <div
+              class="absolute inset-0 bg-[url('../img/product/product-2.jpg')] bg-cover bg-center z-0"
+            ></div>
+            <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
+            <div
+              class="relative z-20 flex flex-col justify-center items-center h-full text-center"
+            >
+              <div class="text-white text-3xl font-semibold">Shirt Outfit</div>
+              <div class="text-white text-xl font-semibold">25 Items</div>
+            </div>
+          </div>
+  
+          <div class="w-full relative h-[600px] rounded-3xl overflow-hidden">
+            <div
+              class="absolute inset-0 bg-[url('../img/product/product-3.jpg')] bg-cover bg-center z-0"
+            ></div>
+            <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
+            <div
+              class="relative z-20 flex flex-col justify-center items-center h-full text-center"
+            >
+              <div class="text-white text-3xl font-semibold">T-Shirt</div>
+              <div class="text-white text-xl font-semibold">20 Items</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mt-4 flex items-center justify-center">
+          <div>
+            <div class="text-[40px] font-semibold mt-24">Our Category List</div>
+            <div class="text-center mb-12">Recently added shirts!</div>
+          </div>
+        </div>
+  
+        <div class="mt-4 grid grid-cols-3 gap-5">
+          <div class="bg-white shadow-sm p-4 rounded-3xl">
+            <div class="flex items-center justify-center">
+              <img src="/img/shirts/shirt-1.png" style="width: 80%" />
+            </div>
+            <div class="px-6 mt-3">
+              <div class="text-3xl font-semibold">Plain White Shirt</div>
+              <div class="text-xl mt-2 mb-4">$29.00</div>
+            </div>
+          </div>
+          <div class="bg-white shadow-sm p-4 rounded-3xl">
+            <div class="flex items-center justify-center">
+              <img src="/img/shirts/shirt-2.png" style="width: 74%" />
+            </div>
+            <div class="px-6 mt-3">
+              <div class="text-3xl font-semibold">Plain White Shirt</div>
+              <div class="text-xl mt-2 mb-4">$29.00</div>
+            </div>
+          </div>
+          <div class="bg-white shadow-sm p-4 rounded-3xl">
+            <div class="flex items-center justify-center">
+              <img src="/img/shirts/shirt-3.png" style="width: 78%" />
+            </div>
+            <div class="px-6 mt-3">
+              <div class="text-3xl font-semibold">Plain White Shirt</div>
+              <div class="text-xl mt-2 mb-4">$29.00</div>
+            </div>
+          </div>
+          <div class="bg-white shadow-sm p-4 rounded-3xl">
+            <div class="flex items-center justify-center">
+              <img src="/img/shirts/shirt-4.png" style="width: 80%" />
+            </div>
+            <div class="px-6 mt-3">
+              <div class="text-3xl font-semibold">Plain White Shirt</div>
+              <div class="text-xl mt-2 mb-4">$29.00</div>
+            </div>
+          </div>
+          <div class="bg-white shadow-sm p-4 rounded-3xl">
+            <div class="flex items-center justify-center">
+              <img src="/img/shirts/shirt-5.png" style="width: 78%" />
+            </div>
+            <div class="px-6 mt-3">
+              <div class="text-3xl font-semibold">Plain White Shirt</div>
+              <div class="text-xl mt-2 mb-4">$29.00</div>
+            </div>
+          </div>
+          <div class="bg-white shadow-sm p-4 rounded-3xl">
+            <div class="flex items-center justify-center">
+              <img src="/img/shirts/shirt-6.png" style="width: 83%" />
+            </div>
+            <div class="px-6 mt-3">
+              <div class="text-3xl font-semibold">Plain White Shirt</div>
+              <div class="text-xl mt-2 mb-4">$29.00</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mt-24 bg-white rounded-4xl h-[500px] flex justify-center">
+          <img src="/img/discount/disc-1.png" style="width: 22%" class="ml-33" />
+          <div class="text-center px-24 flex items-center justify-center">
+            <div>
+              <div class="text-[70px] font-semibold">Get 50% Off</div>
+              <div class="text-xl">
+                for all new product purchases <br />min.purchase $ 450.000
+              </div>
+              <div class="flex items-start mt-5 justify-center gap-1">
+                <div
+                  class="bg-black text-white px-8 text-lg py-4 text-sm rounded-full"
+                >
+                  Shop Now
                 </div>
-                <div class="flex items-end justify-end ml-[340px]">
-                  <div
-                    class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
-                  >
-                    <i class="fi fi-bs-arrow-up-right"></i>
+                <div
+                  class="bg-black text-white rounded-full h-13 w-13 flex items-center justify-center pt-1"
+                >
+                  <i class="fi fi-bs-arrow-up-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="/img/discount/disc-2.png" style="width: 25%" />
+        </div>
+  
+        <div class="mt-4 flex items-center justify-center">
+          <div>
+            <div class="text-[40px] font-semibold mt-24">
+              Our Fitured Collections
+            </div>
+            <div class="text-center mb-12">Recently added shirts!</div>
+          </div>
+        </div>
+  
+        <div class="mt-4 grid grid-cols-3 gap-5">
+          <div>
+            <div
+              class="h-[350px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-[url('../img/collections/collect-1.jpg')] bg-cover bg-center z-0"
+              ></div>
+              <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
+              <div
+                class="relative z-20 flex flex-col justify-end items-start h-full text-center"
+              >
+                <div class="flex px-6 pb-6 justify-between">
+                  <div class="text-left">
+                    <div class="text-white text-3xl font-semibold">Top Pants</div>
+                    <div class="text-white text-xl">Series</div>
+                  </div>
+                  <div class="flex items-end justify-end ml-[340px]">
+                    <div
+                      class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
+                    >
+                      <i class="fi fi-bs-arrow-up-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6">
+              <div
+                class="h-[350px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden"
+              >
+                <div
+                  class="absolute inset-0 bg-[url('../img/collections/collect-2.jpg')] bg-cover bg-center z-0"
+                ></div>
+                <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
+                <div
+                  class="relative z-20 flex flex-col justify-end items-start h-full text-center"
+                >
+                  <div class="flex px-6 pb-6 justify-between">
+                    <div class="text-left">
+                      <div class="text-white text-3xl font-semibold">
+                        Top Shirt
+                      </div>
+                      <div class="text-white text-xl">Series</div>
+                    </div>
+                    <div class="flex items-end justify-end ml-[355px]">
+                      <div
+                        class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
+                      >
+                        <i class="fi fi-bs-arrow-up-right"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="mt-6">
+          <div>
+            <div
+              class="h-[723px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-[url('../img/collections/collect-3.jpg')] bg-cover bg-center z-0"
+              ></div>
+              <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
+              <div
+                class="relative z-20 flex flex-col justify-end items-start h-full text-center"
+              >
+                <div class="flex px-6 pb-6 justify-between">
+                  <div class="text-left">
+                    <div class="text-white text-3xl font-semibold">Full Set</div>
+                    <div class="text-white text-xl">Series</div>
+                  </div>
+                  <div class="flex items-end justify-end ml-[380px]">
+                    <div
+                      class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
+                    >
+                      <i class="fi fi-bs-arrow-up-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
             <div
               class="h-[350px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden"
             >
               <div
-                class="absolute inset-0 bg-[url('../img/collections/collect-2.jpg')] bg-cover bg-center z-0"
+                class="absolute inset-0 bg-[url('../img/collections/collect-4.jpg')] bg-cover bg-center z-0"
               ></div>
               <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
               <div
@@ -413,11 +471,36 @@
                 <div class="flex px-6 pb-6 justify-between">
                   <div class="text-left">
                     <div class="text-white text-3xl font-semibold">
-                      Top Shirt
+                      Winter Collection
                     </div>
                     <div class="text-white text-xl">Series</div>
                   </div>
-                  <div class="flex items-end justify-end ml-[355px]">
+                  <div class="flex items-end justify-end ml-[340px]">
+                    <div
+                      class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
+                    >
+                      <i class="fi fi-bs-arrow-up-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="h-[350px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden mt-6"
+            >
+              <div
+                class="absolute inset-0 bg-[url('../img/collections/collect-5.jpg')] bg-cover bg-center z-0"
+              ></div>
+              <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
+              <div
+                class="relative z-20 flex flex-col justify-end items-start h-full text-center"
+              >
+                <div class="flex px-6 pb-6 justify-between">
+                  <div class="text-left">
+                    <div class="text-white text-3xl font-semibold">Top Pants</div>
+                    <div class="text-white text-xl">Series</div>
+                  </div>
+                  <div class="flex items-end justify-end ml-[340px]">
                     <div
                       class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
                     >
@@ -429,94 +512,11 @@
             </div>
           </div>
         </div>
-
-        <div>
-          <div
-            class="h-[723px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden"
-          >
-            <div
-              class="absolute inset-0 bg-[url('../img/collections/collect-3.jpg')] bg-cover bg-center z-0"
-            ></div>
-            <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
-            <div
-              class="relative z-20 flex flex-col justify-end items-start h-full text-center"
-            >
-              <div class="flex px-6 pb-6 justify-between">
-                <div class="text-left">
-                  <div class="text-white text-3xl font-semibold">Full Set</div>
-                  <div class="text-white text-xl">Series</div>
-                </div>
-                <div class="flex items-end justify-end ml-[380px]">
-                  <div
-                    class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
-                  >
-                    <i class="fi fi-bs-arrow-up-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="home">
-          <div
-            class="h-[350px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden"
-          >
-            <div
-              class="absolute inset-0 bg-[url('../img/collections/collect-4.jpg')] bg-cover bg-center z-0"
-            ></div>
-            <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
-            <div
-              class="relative z-20 flex flex-col justify-end items-start h-full text-center"
-            >
-              <div class="flex px-6 pb-6 justify-between">
-                <div class="text-left">
-                  <div class="text-white text-3xl font-semibold">
-                    Winter Collection
-                  </div>
-                  <div class="text-white text-xl">Series</div>
-                </div>
-                <div class="flex items-end justify-end ml-[340px]">
-                  <div
-                    class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
-                  >
-                    <i class="fi fi-bs-arrow-up-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="h-[350px] w-full bg-white shadow-sm rounded-4xl relative overflow-hidden mt-6"
-          >
-            <div
-              class="absolute inset-0 bg-[url('../img/collections/collect-5.jpg')] bg-cover bg-center z-0"
-            ></div>
-            <div class="absolute inset-0 bg-gray-900/20 z-10"></div>
-            <div
-              class="relative z-20 flex flex-col justify-end items-start h-full text-center"
-            >
-              <div class="flex px-6 pb-6 justify-between">
-                <div class="text-left">
-                  <div class="text-white text-3xl font-semibold">Top Pants</div>
-                  <div class="text-white text-xl">Series</div>
-                </div>
-                <div class="flex items-end justify-end ml-[340px]">
-                  <div
-                    class="h-12 w-12 bg-white rounded-full flex items-center justify-center pt-1"
-                  >
-                    <i class="fi fi-bs-arrow-up-right"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
-
-      <div>About Us</div>
-      <div>Blog</div>
-      <div>FAQ</div>
+      <div id="about">About Us</div>
+      <div id="blog">Blog</div>
+      <div id="faq">FAQ</div>
     </div>
 
     <div class="mt-6 bg-white px-12 pt-12 pb-6 mb-12 rounded-4xl">
@@ -601,6 +601,23 @@
     <script>
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel();
+      });
+    </script>
+    <script>
+      function showSection(sectionId) {
+        const sections = ["home", "about", "blog", "faq"];
+
+        sections.forEach((id) => {
+          const el = document.getElementById(id);
+          if (id === sectionId) {
+            el.classList.remove("hidden");
+          } else {
+            el.classList.add("hidden");
+          }
+        });
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        showSection("home");
       });
     </script>
   </body>
