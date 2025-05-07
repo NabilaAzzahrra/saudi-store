@@ -658,6 +658,7 @@
           <div class="mb-5">
             <input
               type="text"
+              id="pesanAnda"
               name="pesanAnda"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Pesan Anda"
@@ -672,6 +673,9 @@
           </button>
         </form>
       </div>
+
+      <!-- TUGAS -->
+       
     </div>
 
     <div id="blog">Blog</div>
@@ -770,6 +774,7 @@
         const show = this.value === "lainnya";
         const input = document.getElementById("inputLainnya");
         input.style.display = show ? "block" : "none";
+        // INPUTAN INI.UNTUK. HARUS/WAJIB = DITAMPILKAN
         input.querySelector("input").required = show;
       };
     </script>
